@@ -21,5 +21,5 @@ app.use("/api/users", userRoute);
 app.use("/api/auth", authRoute);
 
 app.listen(8800, ()=>{
-    console.log("server is listenings");
+    console.log("server is listening");
 })

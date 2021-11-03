@@ -12,7 +12,7 @@ const UserSchema = new mongoose.Schema({
         type:String,
         required: true,
         max: 50,
-        unique: true,
+        unique: true
     },
     password:{
         type:String,
@@ -39,6 +39,23 @@ const UserSchema = new mongoose.Schema({
         type:Boolean,
         default: false
     },
+    desc:{
+        type:String,
+        max:50,
+        default:""
+    },
+    city:{
+        type:String,
+        max:50
+    },
+    from:{
+        type:String,
+        max:50
+    },
+    relationship:{
+        type:Number,
+        enum:[1,2,3]
+    }
 },
 {timestamps: true}
 );
