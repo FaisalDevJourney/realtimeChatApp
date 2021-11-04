@@ -21,19 +21,19 @@ const UserSchema = new mongoose.Schema({
     },
     profilePicture:{
         type:String,
-        defualt:""
+        default:""
     },
     converPicture:{
         type:String,
-        defualt:""
+        default:""
     },
     followers:{
         type:Array,
-        defualt:[]
+        default:[]
     },
-    followins:{
+    followings:{
         type:Array,
-        defualt:[]
+        default:[]
     },
     isAdmin:{
         type:Boolean,
